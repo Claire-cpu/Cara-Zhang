@@ -12,4 +12,5 @@
 - Tools: Git, Docker, etc.
 
 ## 📊 GitHub Stats
+https://github-readme-stats.vercel.app/api?username=Claire-cpu&show_icons=true
 
