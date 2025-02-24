@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Cara Zhang 👋
 ## 👨‍💻 About Me
 - 🔭 I’m currently working on [Project Name].
 - 🌱 I’m learning [Technology or Skill].
