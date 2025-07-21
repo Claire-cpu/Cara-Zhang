@@ -8,7 +8,7 @@ const typewriterStrings = [
   "I am Very Hard Worker",
 ];
 
-export default function Hero() {
+const Hero = React.forwardRef((props, ref) => {
   const [typed, setTyped] = useState("");
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -43,7 +43,7 @@ export default function Hero() {
   }, [subIndex, index, forward, pause]);
 
   return (
-    <section className={styles.hero} id="home">
+    <section className={styles.hero} id={props.id} ref={ref}>
       <div className={styles.overlay}></div>
       <div className={styles.container}>
         <div className={styles.introTextArea}>
@@ -59,4 +59,5 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+});
+export default Hero;
