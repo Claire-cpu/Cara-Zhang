@@ -1,0 +1,113 @@
+.skillsSection {
+  padding: 3rem 1rem;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #109af7;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 1.5rem;
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.skillArea {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 2rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 6px 24px rgba(16, 154, 247, 0.12);
+  }
+}
+
+.skillBg {
+  width: 152px;
+  height: 152px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.chart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 152px;
+}
+
+.chartCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 152px;
+  height: 152px;
+  z-index: 1;
+}
+
+.percent {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #109af7;
+  line-height: 152px;
+  z-index: 2;
+  position: relative;
+}
+
+.percentSign {
+  font-size: 1.1rem;
+  margin-left: 0.1em;
+}
+
+.skillName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skillDesc {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}

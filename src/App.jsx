@@ -1,35 +1,89 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Preloader from "./components/Preloader/Preloader";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Services from "./components/Services/Services";
+import Portfolio from "./components/Portfolio/Portfolio";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
+function Landing() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Services />
+      <Portfolio />
+
+      <Contact />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/skills"
+          element={
+            <>
+              <Navbar />
+              <Skills />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <>
+              <Navbar />
+              <Services />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <>
+              <Navbar />
+              <Portfolio />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Navbar />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+}

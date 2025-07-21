@@ -1,0 +1,132 @@
+.contactSection {
+  position: relative;
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 154, 247, 0.08);
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #109af7;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  @media (min-width: 900px) {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+.detailsCol {
+  flex: 1 1 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.formText {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #109af7;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #109af7;
+}
+
+.formCol {
+  flex: 2 1 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #eaf6fd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #222;
+  background: #f9f9f9;
+  transition: border 0.2s;
+  &:focus {
+    border: 1.5px solid #109af7;
+    outline: none;
+    background: #fff;
+  }
+}
+
+.submitBtn {
+  background: #109af7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  &:hover,
+  &:focus {
+    background: #0d7fc1;
+  }
+}
