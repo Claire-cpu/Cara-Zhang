@@ -8,7 +8,7 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-const brandText = "Profile";
+const brandText = "Hello";
 
 export default function Navbar({ scrolledPastHero }) {
   const [typed, setTyped] = useState("");

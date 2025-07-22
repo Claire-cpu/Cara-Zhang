@@ -35,8 +35,8 @@ export default function App() {
       <Hero id="hero" ref={heroRef} />
       <About id="about" />
       <Skills id="skills" />
-      <Services id="services" />
       <Portfolio id="portfolio" />
+      <Services id="services" />
       <Contact id="contact" />
     </>
   );

@@ -113,7 +113,7 @@ export default function Skills() {
           </h2>
           {console.log("Skills inView:", inView)}
           <h3 className={inView ? styles.subheadingInView : styles.subheading}>
-            A showcase of my technical stack and certifications.
+            Showcase of My Tech Stack & Learning Milestones.
           </h3>
         </div>
         <div className={styles.skillsWhiteBox}>
