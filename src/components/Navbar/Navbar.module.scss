@@ -6,10 +6,12 @@
   left: 0;
   z-index: 1000;
   background: transparent;
+  padding: 1.5rem;
+
   // display: flex;
   // align-items: center;
   // justify-content: space-between;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   &--past {
     background-color: #fff;
   }
@@ -21,7 +23,6 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem;
 }
 
 .brand {

@@ -12,9 +12,6 @@ export default function Contact() {
           <h2 className={styles.heading}>
             <Typewriter text="Let's Connect" />
           </h2>
-          {/* <h3 className={styles.subheading}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h3> */}
         </div>
         <div className={styles.row}>
           <div className={styles.detailsCol}>
@@ -42,35 +39,6 @@ export default function Contact() {
           <div className={styles["img_container"]}>
             <img src={image} className={styles["img_container__img"]} />
           </div>
-          {/* <form className={styles.formCol} autoComplete="off">
-            <input
-              type="text"
-              className={styles.input}
-              placeholder="Your Name"
-              required
-            />
-            <input
-              type="email"
-              className={styles.input}
-              placeholder="Your Email"
-              required
-            />
-            <input
-              type="tel"
-              className={styles.input}
-              placeholder="Your Phone"
-              required
-            />
-            <textarea
-              className={styles.input}
-              placeholder="Your Message"
-              required
-              rows={4}
-            ></textarea>
-            <button type="submit" className={styles.submitBtn}>
-              SEND MESSAGE
-            </button>
-          </form> */}
         </div>
       </div>
     </section>
