@@ -29,21 +29,31 @@ export default function Portfolio() {
         <div className={styles.grid}>
           {projects.map((project, i) => (
             <div className={styles.item} key={i}>
-              <div className={styles.imgWrap}>
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  className={styles.img}
-                />
-                <div className={styles.hover}>
-                  <div className={styles.hoverContent}>
-                    <span className={styles.plus}>+</span>
+              <div className={styles.cardInner}>
+                <div className={styles.cardFront}>
+                  <div className={styles.imgWrap}>
+                    <img
+                      src={project.img}
+                      alt={project.name}
+                      className={styles.img}
+                    />
+                    <div className={styles.hover}>
+                      <div className={styles.hoverContent}>
+                        <span className={styles.plus}>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.caption}>
+                    <h4>{project.name}</h4>
+                    <p>{project.category}</p>
                   </div>
                 </div>
-              </div>
-              <div className={styles.caption}>
-                <h4>{project.name}</h4>
-                <p>{project.category}</p>
+                <div className={styles.cardBack}>
+                  <div>
+                    <h4>Project Details</h4>
+                    <p>More info here...</p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

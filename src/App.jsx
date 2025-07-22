@@ -7,7 +7,6 @@ import Skills from "./components/Skills/Skills";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 
 export default function App() {
   const heroRef = useRef(null);
@@ -29,6 +28,7 @@ export default function App() {
       if (heroRef.current) observer.unobserve(heroRef.current);
     };
   }, []);
+
   return (
     <>
       <Navbar scrolledPastHero={scrolledPastHero} />
@@ -38,7 +38,6 @@ export default function App() {
       <Services id="services" />
       <Portfolio id="portfolio" />
       <Contact id="contact" />
-      <Footer />
     </>
   );
 }
