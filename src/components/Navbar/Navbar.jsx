@@ -31,13 +31,13 @@ export default function Navbar({ scrolledPastHero }) {
       }`}
     >
       <nav className={styles.navbar}>
-        <a href="#home" className={styles.brand}>
+        <a href="#hero" className={styles.brand}>
           {typed}
           <span className={styles.cursor}>
             {typed.length < brandText.length ? "|" : ""}
           </span>
         </a>
-        <button
+        {/* <button
           className={styles.toggle}
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle navigation"
@@ -45,7 +45,7 @@ export default function Navbar({ scrolledPastHero }) {
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
-        </button>
+        </button> */}
         <ul className={`${styles.links} ${open ? styles.open : ""}`}>
           {navLinks.map((link) => (
             <li key={link.href}>
