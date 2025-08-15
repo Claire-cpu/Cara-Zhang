@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://claire-cpu.github.io/Cara-Zhang/",
   "type": "module",
   "scripts": {
     "dev": "vite",
