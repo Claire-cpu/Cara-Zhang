@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.scss";
-import meImg from "../../assets/img/me.jpg";
+import meImg from "../../assets/img/avatar-toned.jpg";
 
 export default function About() {
   return (
@@ -11,15 +11,19 @@ export default function About() {
         </div>
         <div className={styles.textCol}>
           <h2 className={styles.heading}>About me</h2>
-          <h3 className={styles.subheading}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h3>
-          <h3 className={styles.name}>John Doe</h3>
-          <h4 className={styles.role}>Front end Developer</h4>
+
+          <h3 className={styles.name}>Cara Zhang</h3>
+          <h4 className={styles.role}>Software Engineer</h4>
           <p className={styles.desc}>
-            I am a passionate web developer with a love for building beautiful
-            and functional websites. I have 4 years of experience and am always
-            eager to learn new technologies and take on new challenges.
+            I'm a passionate full-stack developer with expertise in AI
+            development, data engineering, and project management. I specialize
+            in building intelligent applications to solve real-world problems. I
+            also bring professional expertise in requirements gathering, sprint
+            planning, and stakeholder communication to the table. My main tech
+            stacks mainly involve full-stack development, API construction,
+            database design, AI agent implementation, and cloud engineering. As
+            a team player, I believe that empathy, collaboration, and morale are
+            essential to delivering impactful and high-quality solutions.
           </p>
         </div>
       </div>

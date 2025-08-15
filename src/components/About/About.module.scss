@@ -26,13 +26,14 @@
 }
 
 .imgMe {
-  width: 180px;
-  height: 180px;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   border: 6px solid #fff;
   background: #fff;
+  margin-top: 1.3rem;
 }
 
 .textCol {

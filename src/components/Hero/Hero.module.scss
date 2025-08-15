@@ -42,14 +42,14 @@
 
 .introText {
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   font-weight: 400;
 }
 
 .typeText {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: flex;
@@ -106,7 +106,7 @@
 
 @media (min-width: 900px) {
   .introText {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .typeText {
     font-size: 3rem;

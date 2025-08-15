@@ -27,18 +27,31 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 2rem 1.5rem;
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.grid::-webkit-scrollbar {
+  height: 10px;
+}
+.grid::-webkit-scrollbar-thumb {
+  background: #109af7;
+  border-radius: 5px;
+}
+.grid::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 5px;
 }
 
 .item {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -79,12 +92,38 @@
 }
 
 .cardBack {
-  background: #109af7;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
   justify-content: center;
   transform: rotateY(180deg);
+  &__title {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    font-size: 1rem;
+  }
+  &__des,
+  &__tech {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
 }
 
 .imgWrap {

@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.scss";
 
 const typewriterStrings = [
-  "Hi, I am John Doe",
-  "I am a Web Developer",
-  "I have 4 Years Experience",
-  "I am Very Hard Worker",
+  "Hi, I am Cara Zhang",
+  "I am a Full-stack Developer",
+  "I have 1 year experience",
+  "Own 6 full-stack projects",
+  "I am action-oriented",
+  "passionate and compassionate",
 ];
 
 const Hero = React.forwardRef((props, ref) => {

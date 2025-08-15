@@ -1,30 +1,9 @@
 .contactSection {
   position: relative;
-  min-height: 100vh;
+  height: auto;
   padding: 0;
-  background: #222;
+  background: rgba(0, 0, 0, 0.9);
   overflow: hidden;
-}
-
-.bgImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../assets/contact-bg.jpg") center center/cover no-repeat;
-  z-index: 0;
-  filter: brightness(0.5);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
 
 .container {
@@ -32,7 +11,7 @@
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px 40px 20px;
+  padding: 60px 20px 70px 20px;
 }
 
 .header {
@@ -51,15 +30,8 @@
   display: inline-block;
 }
 .heading span {
-  // border-bottom: 5px solid #109af7;
   padding-bottom: 2px;
 }
-
-// .subheading {
-//   font-size: 1.1rem;
-//   color: #fff;
-//   font-weight: 400;
-// }
 
 .row {
   display: flex;
@@ -74,8 +46,8 @@
 }
 
 .detailsCol {
-  // flex: 1 1 40rem;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
@@ -193,6 +165,6 @@
   justify-content: flex-start;
   &__img {
     width: auto;
-    height: 50vh;
+    height: 40vh;
   }
 }
