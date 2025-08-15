@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.scss";
+import { handleNavClick } from "../../util/handleNavClick";
 
 const typewriterStrings = [
   "Hi, I am Cara Zhang",
@@ -54,7 +55,11 @@ const Hero = React.forwardRef((props, ref) => {
             <span>{typed}</span>
             <span className={styles.cursor}>|</span>
           </div>
-          <a href="#about" className={styles.ctaBtn}>
+          <a
+            href="#about"
+            className={styles.ctaBtn}
+            onClick={(e) => handleNavClick(e, "#about")}
+          >
             More About Me
           </a>
         </div>

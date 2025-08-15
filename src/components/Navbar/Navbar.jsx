@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.scss";
+import { handleNavClick } from "../../util/handleNavClick";
+
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#services", label: "Services" },
   { href: "#portfolio", label: "Portfolio" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -22,8 +24,6 @@ export default function Navbar({ scrolledPastHero }) {
     return () => clearInterval(interval);
   }, []);
 
-  const [open, setOpen] = useState(false);
-
   return (
     <header
       className={`${styles.header}  ${
@@ -31,27 +31,23 @@ export default function Navbar({ scrolledPastHero }) {
       }`}
     >
       <nav className={styles.navbar}>
-        <a href="#hero" className={styles.brand}>
+        <a
+          href="#hero"
+          className={styles.brand}
+          onClick={(e) => handleNavClick(e, "#hero")}
+        >
           {typed}
           <span className={styles.cursor}>
             {typed.length < brandText.length ? "|" : ""}
           </span>
         </a>
-        {/* <button
-          className={styles.toggle}
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle navigation"
-        >
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-        </button> */}
-        <ul className={`${styles.links} ${open ? styles.open : ""}`}>
+
+        <ul className={styles.links}>
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                onClick={() => setOpen(false)}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className={`${styles["links__label"]} ${
                   scrolledPastHero ? styles["links__label--past"] : ""
                 }`}
